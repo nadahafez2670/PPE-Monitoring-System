@@ -1,6 +1,6 @@
 # 🦺 PPE Detection & Construction Site Safety Monitoring
 
-An AI-powered Computer Vision system for monitoring construction site safety by detecting workers and verifying compliance with Personal Protective Equipment (PPE) using YOLO11.
+An AI-powered Computer Vision system for monitoring construction site safety by detecting workers and verifying compliance with Personal Protective Equipment (PPE) using YOLOv8.
 
 ---
 
@@ -29,7 +29,7 @@ The system identifies PPE violations, calculates safety statistics, estimates th
 
 ## 🧠 Model
 
-- YOLO11
+- YOLOv8
 - Custom Fine-Tuned Model
 - 5 Detection Classes
 
@@ -105,7 +105,7 @@ The application consists of three main sections:
 ## 🛠️ Technologies
 
 - Python
-- YOLO11 (Ultralytics)
+- YOLOv8 (Ultralytics)
 - OpenCV
 - NumPy
 - Streamlit
