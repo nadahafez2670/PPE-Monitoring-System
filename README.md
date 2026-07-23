@@ -150,4 +150,4 @@ PPE-Detection/
 
 ## 👥 Team
 
-Developed as an AI-powered Construction Site Safety Monitoring System using Computer Vision and Deep Learning.
+· Nada Ahmed Ahmed    . Nancy Nabil Mohamed   · Eman Mohamed Mousa   
