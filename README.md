@@ -1,37 +1,45 @@
-# 🦺 PPE Detection & Construction Site Safety Monitoring
+# 🏗️ SiteGuard AI – PPE Detection & Construction Site Safety Monitoring
 
-An AI-powered Computer Vision system for monitoring construction site safety by detecting workers and verifying compliance with Personal Protective Equipment (PPE) using YOLOv8.
-
----
-
-## 📌 Overview
-
-This project automatically detects construction workers and checks whether they are wearing the required safety equipment.
-
-The system identifies PPE violations, calculates safety statistics, estimates the overall site risk level, and generates an interactive dashboard for safety monitoring.
+An AI-powered Computer Vision system for monitoring construction site safety by detecting workers and verifying compliance with Personal Protective Equipment (PPE) using a fine-tuned **YOLOv8s** model.
 
 ---
 
-## 🚀 Features
+## 📸 Application Preview
+
+<p align="center">
+<img src="assets/Screenshot 2026-07-25 005815.png" width="100%">
+</p>
+
+---
+
+# 📌 Overview
+
+Construction sites are among the highest-risk working environments, where failure to wear Personal Protective Equipment (PPE) can lead to serious accidents.
+
+This project provides an AI-powered safety monitoring system that automatically detects workers, identifies PPE violations, calculates compliance statistics, estimates the overall site risk level, and generates an interactive dashboard for safety inspection.
+
+---
+
+# ✨ Features
 
 - 👷 Worker Detection
 - 🪖 Hardhat Detection
 - 🦺 Safety Vest Detection
 - ❌ PPE Violation Detection
-- 📊 Safety Compliance Dashboard
-- 📈 Interactive Charts
+- 📊 Interactive Safety Dashboard
+- 📈 Compliance Analytics
 - 🚨 Risk Level Assessment
 - 🤖 AI Safety Recommendations
 - 📄 Downloadable Safety Report
-- 🎥 Image & Video Inference
+- 🎥 Image & Video Processing
 
 ---
 
-## 🧠 Model
+# 🧠 Model
 
-- YOLOv8
-- Custom Fine-Tuned Model
-- 5 Detection Classes
+**Model:** YOLOv8s (Fine-Tuned)
+
+### Detection Classes
 
 | Class |
 |--------|
@@ -43,69 +51,94 @@ The system identifies PPE violations, calculates safety statistics, estimates th
 
 ---
 
-## 📊 Business Logic
+# 📊 Model Performance
 
-After object detection, the system:
-
-- Counts total workers
-- Matches PPE with each worker
-- Detects safety violations
-- Calculates compliance rate
-- Determines risk level
-- Generates safety recommendations
-- Produces an inspection report
+| Metric | Score |
+|---------|------:|
+| Precision | **79.6%** |
+| Recall | **63.1%** |
+| mAP@50 | **70.2%** |
+| mAP@50-95 | **44.3%** |
 
 ---
 
-## 🏗️ Streamlit Application
+# ⚙️ Business Logic
 
-The application consists of three main sections:
+After object detection, the system performs additional business analysis by:
 
-### 🏗️ Project Overview
+- Counting total workers
+- Matching PPE items to each detected worker
+- Detecting safety violations
+- Calculating PPE compliance rate
+- Estimating construction site risk level
+- Generating AI safety recommendations
+- Producing a downloadable inspection report
+
+---
+
+# 🖥️ Streamlit Application
+
+The application consists of three professional pages.
+
+## 🏗️ Project Overview
 
 - About Project
 - Business Problem
 - KPIs
 - Workflow
-- Features
+- Project Features
 
-### 🤖 AI Analytics
+---
+
+## 🤖 AI Analytics
 
 - Dataset Information
-- YOLO11 Model
-- Performance Metrics
-- Results
+- YOLOv8s Architecture
+- Evaluation Metrics
+- Training Results
 - Confusion Matrix
 - Sample Detection
 
-### 📊 Safety Monitoring Dashboard
+---
 
-- Upload Image / Video
+## 📊 Safety Monitoring Dashboard
+
+- Upload Image or Video
 - Original Media
 - Detection Results
-- Safety Dashboard
-- Compliance Charts
-- Risk Level
+- Worker Statistics
+- Compliance Dashboard
+- Interactive Charts
+- Risk Level Indicator
 - AI Recommendation
-- Download Report
+- Download Inspection Report
 
 ---
 
-## 📈 Evaluation Metrics
+# 📸 Screenshots
 
-| Metric | Value |
-|---------|-------|
-| Precision | 79.6% |
-| Recall | 63.1% |
-| mAP@50 | 70.2% |
-| mAP@50-95 | 44.3% |
+
+## Safety Monitoring Dashboard
+
+<p align="center">
+<img src="assets/Screenshot 2026-07-23 104353.png" width="90%">
+</p>
 
 ---
 
-## 🛠️ Technologies
+## Sample Detection
+
+<p align="center">
+<img src="assets/Screenshot 2026-07-23 104244.png" width="90%">
+</p>
+
+---
+
+
+# 🛠️ Tech Stack
 
 - Python
-- YOLOv8 (Ultralytics)
+- YOLOv8s (Ultralytics)
 - OpenCV
 - NumPy
 - Streamlit
@@ -114,40 +147,56 @@ The application consists of three main sections:
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
-PPE-Detection/
+PPE-Monitoring-System
 │
 ├── app.py
 ├── model_engine.py
 ├── best.pt
 ├── requirements.txt
-├── Final_Project.ipynb
+├── README.md
+│
+├── assets/
+│   ├── banner.png
+│   ├── overview.png
+│   ├── analytics.png
+│   ├── dashboard.png
+│   ├── detection.png
+│   ├── results.png
+│   └── confusion_matrix.png
+│
+├── notebooks/
+│   ├── Training.ipynb
+│   └── Final_Project.ipynb
 │
 ├── outputs/
-│
 ├── dataset/
-│
-├── filtered_dataset/
-│
-└── README.md
+└── filtered_dataset/
 ```
 
 ---
 
-## 🎯 Future Improvements
+# 🚀 Future Improvements
 
 - Live CCTV Monitoring
 - Multi-Camera Support
+- Worker Tracking
 - Fire & Smoke Detection
 - Fall Detection
-- Email/SMS Alerts
+- Email & SMS Alerts
 - Cloud Deployment
 - Real-Time Notifications
 
 ---
 
-## 👥 Team
+# 👥 Team
 
-· Nada Ahmed Ahmed    . Nancy Nabil Mohamed   · Eman Mohamed Mousa   
+- **Nada Ahmed Ahmed**
+- **Nancy Nabil Mohamed**
+- **Eman Mohamed Mousa**
+
+---
+
+## ⭐ If you found this project useful, consider giving it a Star!
